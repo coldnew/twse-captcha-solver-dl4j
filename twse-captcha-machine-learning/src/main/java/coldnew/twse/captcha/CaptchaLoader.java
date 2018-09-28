@@ -97,11 +97,6 @@ public class CaptchaLoader extends NativeImageLoader implements Serializable {
     }
   }
 
-  // public static INDArray stringToCharVector(String str) {
-  //      char[] chars = str.toCharArray();
-  //      List<INDArray> vectors = IntStream.range(0, chars.leh)
-  // }
-
   public MultiDataSet convertDataSet(int num) throws Exception {
     int batchNumCount = 0;
 
@@ -121,8 +116,6 @@ public class CaptchaLoader extends NativeImageLoader implements Serializable {
       Nd4j.getAffinityManager().ensureLocation(feature, AffinityManager.Location.DEVICE);
       for (int i = 0; i < imageNames.length; i++) {
 	int digit = labelList.indexOf(imageNames[i]);
-	// logger.info("digit : " + digit + " str: " + imageNames[i] + " len: " +
-	// imageNames.length);
 	labels[i] = Nd4j.zeros(1, labelList.size()).putScalar(new int[] {0, digit}, 1);
       }
 

@@ -84,7 +84,7 @@ class Main {
     UIServer uiServer = UIServer.getInstance();
     StatsStorage statsStorage = new InMemoryStatsStorage();
     uiServer.attach(statsStorage);
-    // NOTE:
+
     model.setListeners(new ScoreIterationListener(36), new StatsListener(statsStorage));
 
     // construct the iterator
