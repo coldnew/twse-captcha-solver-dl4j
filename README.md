@@ -29,7 +29,7 @@ For more info, please see each project's README.
 
 #### Q: Is this project really work ?
 
-Yes, this project is part of my side project. However, you should build your own dataset to traioning the captcha solver.
+Yes, this project is part of my side project. However, you should build your own dataset to training the captcha solver.
 
 #### Q: Will you share your training datasets?
 
