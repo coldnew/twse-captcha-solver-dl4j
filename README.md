@@ -9,17 +9,17 @@ Compared with my another project [twse-captcha-solver-java](https://github.com/c
 
 ## Usage
 
-This project is built with three subproject:
+This project is built with three subprojects:
 
-- twse-captcha-downloader
+- [twse-captcha-downloader](https://github.com/coldnew/twse-captcha-solver-dl4j/tree/master/twse-captcha-downloader)
 
   A simple captcha image downloader based on [selenium](https://www.seleniumhq.org/) and [chromedriver](https://sites.google.com/a/chromium.org/chromedriver/). This is the first step to build your own datasets.
 
-- twse-captcha-machine-learning
+- [twse-captcha-machine-learning](https://github.com/coldnew/twse-captcha-solver-dl4j/tree/master/twse-captcha-machine-learning)
 
   After collect enough captcha images, feed these datasets to this project and get the training model.
 
-- twse-captcha-solver
+- [twse-captcha-solver](https://github.com/coldnew/twse-captcha-solver-dl4j/tree/master/twse-captcha-solver)
 
   Use the training model generated from `twse-captcha-machine-learning` and create your own captcha solver.
 
