@@ -3,15 +3,37 @@
 
 A [deeplearning4j](https://deeplearning4j.org/) based captcha training tool for for Taiwan Stock Exchange's [website](http://bsr.twse.com.tw/bshtm/).
 
-# Usage
+## Usage
 
-#TODO#
+In `src/main/resources`, there are three folders, each one should have different datasets:
 
-Copy your captcha images to `src/main/resources/train`
+- test
 
+  Copy some images from `train` set, this set is mainly to determine whether it's good that the model fited traing data.
 
+- train
 
-# UI Server
+  Copy most of your captcha images here, this datasets is used for train model.
+
+- valid
+
+  This is varification set, put the captcha images not in `traing` set to determine the model is good or bad. 
+
+After build your own set, just run
+
+```
+gradle run
+```
+
+And wait for the training result. You may see result like belows:
+
+```
+validate result : sum count =1346 correct count=1295
+```
+
+Copy the `out/model.zip` to [twse-captcha-solver](https://github.com/coldnew/twse-captcha-solver-dl4j/tree/master/twse-captcha-solver)'s resource directory and build your solver.
+
+## UI Server
 
 You can connect to http://localhost:9000 to sea the training result
 
