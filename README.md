@@ -25,7 +25,12 @@ This project is built with three subprojects:
 
 For more info, please see each project's README.
 
-## Q&A
+## Screenshot
+
+![solver execute result](https://raw.githubusercontent.com/coldnew/twse-captcha-solver-dl4j/master/screenshots/solver_1.png)
+
+
+## Q & A
 
 #### Q: Is this project really work ?
 
