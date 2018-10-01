@@ -27,6 +27,12 @@ unknown_9915dada-c614-4bda-b13a-a16f11a7876a.png  unknown_f716ff47-ddd1-450d-bca
 ```
 Rename these image to their captcha value.
 
+Take `unknown_2ee43351-a386-44b9-bc6a-fa4545abebdf.png` as example, since it's value is `F4NLC`, you should rename it to `F4NLC.png`.
+
+```
+$ mv unknown_2ee43351-a386-44b9-bc6a-fa4545abebdf.png F4NLC.png
+```
+
 ## Hint
 
 This project is just an example on how to download the captcha. To download the captcha images more quickly, you can based on this project with [twse-captcha-solver-java](https://github.com/coldnew/twse-captcha-solver-java) to build a more efficiently downloader.
