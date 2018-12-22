@@ -28,14 +28,14 @@ gradle run
 And wait for the training result. You may see result like belows:
 
 ```
-validate result : sum count =1346 correct count=1295
+validate result : sum count = 1346 correct count = 1295
 ```
 
 Copy the `out/model.zip` to [twse-captcha-solver](https://github.com/coldnew/twse-captcha-solver-dl4j/tree/master/twse-captcha-solver)'s resource directory and build your solver.
 
 ## UI Server
 
-You can connect to http://localhost:9000 to sea the training result
+You can connect to http://localhost:9000 to see the training result
 
 ![ui server 1](https://raw.githubusercontent.com/coldnew/twse-captcha-solver-dl4j/master/screenshots/dl4j_ui1.png)
 ![ui server 2](https://raw.githubusercontent.com/coldnew/twse-captcha-solver-dl4j/master/screenshots/dl4j_ui2.png)
